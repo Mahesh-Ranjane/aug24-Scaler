@@ -13,14 +13,14 @@ base_url = "http://books.toscrape.com/index.html"
 
 home_page = requests.get(base_url)
 
-if home_page.status_code == 200:
+if home_page.status_code == 400:
   print("SUCCESS")
 else:
   print(f"FAILED, status code: {home_page.status_code}")
 
 import numpy as np
 
-x = np.ones((4,4))
+x = np.zeros((4,4))
 x
 x[1:-1,1:-1] = 0
 x
